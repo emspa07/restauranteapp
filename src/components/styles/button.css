@@ -1,0 +1,10 @@
+.button__reservation{
+    width: 100%;
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    background: black;
+    border: solid #ffff;
+    color: #eeee;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}

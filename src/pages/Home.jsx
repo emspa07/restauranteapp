@@ -1,7 +1,12 @@
+import React from "react"
+import Jumbotron from "../components/Jumbotron";
+
 function Home () {
     return (
-        <p></p>
+        <main>
+            <Jumbotron/>
+        </main>
     )
 }
 
-export default Home
+export {Home};
