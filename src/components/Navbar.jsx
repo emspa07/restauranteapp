@@ -1,9 +1,17 @@
 function Navbar(){
     return(
-    <Router>
+    <>
         <header>
-            
+            <nav>
+               <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+               </ul>
+                
+            </nav>
         </header>
-    </Router>
+    </>
     )
 }
+export default Navbar;
