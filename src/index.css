@@ -1,6 +1,23 @@
+/*estilos generales*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  font-family: 'Fira Sans', sans-serif;
+}
+.app_container{
+  max-width: 85%;
+  margin: 0 auto;
+}
+.section_spacers{
+  padding: 4rem 0;
+}
 
+/*media queries*/
+@media (min-width: 300px) and (max-width: 880px) {
+  .flex-container {
+    max-width: 90%;
+  }
+}

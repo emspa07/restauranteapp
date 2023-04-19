@@ -1,15 +1,20 @@
+//Librerias
 import React from "react";
-import { BrowserRouter as Link, Routes, Route } from "react-router-dom";
-import {BiDotsVerticalRounded} from "react-icons";
+import {Link} from "react-router-dom";
+import {BiDotsVerticalRounded} from "react-icons/bi";
 
-import "./styles/navbar.css"
+//Estilos 
+import "./styles/navbar.css";
 
+//Componentes 
+import logoNikko from "./images/logo.svg";
 
 function Navbar (){
     return (
     <>
         <header>
-            <div className="nav_container">
+            <div className="app_container nav_container">
+            <img src = {logoNikko} alt="Logo-Restaurant" className="nav_logo"/>
             <nav>
                 <input type = "checkbox" id = "menu_responsive"/>
                 <label htmlFor="menu_responsive" className = "vertical-btn"><BiDotsVerticalRounded/></label>
@@ -24,23 +29,8 @@ function Navbar (){
             </div>
  
         </header>
-        <Routes>
-      <Route path="/" element={<Home/>}/>
-    </Routes>
-
-    <Routes>
-      <Route exact path="/fooddishes" element={<FoodDishes/>}/>
-    </Routes>
-
-    <Routes>
-      <Route exact path="/blog" element={<Blog />}/>
-    </Routes>
-
-    <Routes>
-      <Route exact path="/reservation" element={<Reservation />}/>
-    </Routes>
-    </>
+    </> 
     )
 }
 
-export {Navbar};
+export default Navbar;

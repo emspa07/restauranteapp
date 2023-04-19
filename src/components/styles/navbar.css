@@ -3,12 +3,15 @@ header{
     background: black;
     padding: 1rem 0;
 }
+.nav_logo{
+    cursor: pointer; 
+}
 .nav_container{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header .vertical-btn #menu_responsive{
+#menu_responsive{
     display: none;
 }
 .nav_list li{
@@ -19,12 +22,13 @@ header{
 .nav_list .link{
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 .nav_list .link:hover {
     text-decoration: underline;
     transition: all 100ms ease-in-out;
+    color:gainsboro;
 }
-
 /*media queries*/
 @media (min-width: 300px) and (max-width:880px){   
     .nav_container .vertical-btn{
@@ -42,12 +46,15 @@ header{
         padding: 1.3rem 0.8rem;
     }
     .nav_container #menu_responsive:checked ~ .nav_list{
-        background: #1b1b1b;
+        background: black;
         width: 100%;
         height: 60vh;
         display: flex;
         flex-direction: column;
         text-align: justify;
         justify-content: center;
+    }
+    .nav_logo{
+        width: 35%;
     }
 }
