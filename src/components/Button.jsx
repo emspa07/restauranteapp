@@ -5,4 +5,4 @@ function Button(text){
     return <button className="button__reservation">{text.title}</button>
 }
 
-export {Button};
+export default Button;
