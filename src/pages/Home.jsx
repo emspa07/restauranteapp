@@ -1,4 +1,4 @@
-import Jumbotron from '../components/Jumbotron'
+import Jumbotron from '../components/Jumbotron';
 import About from '../components/About';
 
 export const Home = () => {

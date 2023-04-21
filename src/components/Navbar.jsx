@@ -19,7 +19,6 @@ function Navbar (){
                     <label htmlFor="menu_responsive" className = "vertical-btn"><BiDotsVerticalRounded/></label>
                 <ul className="nav_list">
                     <li><Link to ="/" className="link">Home</Link></li>                
-                    <li><Link to ="/about" className="link">Conócenos</Link></li>
                     <li><Link to ="/menu" className="link">Menú</Link></li>
                     <li><Link to ="/reservation" className="link">Reservaciones</Link></li>
                 </ul>
