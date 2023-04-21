@@ -12,10 +12,10 @@ function About () {
                 <div className="info_foto_about">
                     <div className="foto_about">
                         <img src={fotoRestaurante} alt="Restaurant" className="img_restaurant"/>
-                        <span>“</span>
-                        <p>La increíble vivencia ‘Chef en Casa’ de Nikko nos sumerge en un mundo de hedonismo.</p>
-                        <span>”</span>
-                        <h6>- Gather Journal</h6>
+                        <div className="quote">
+                            <p>“La increíble vivencia ‘Chef en Casa’ de Nikko nos sumerge en un mundo de hedonismo”.</p>
+                            <h6>- Gather Journal</h6>
+                        </div>    
                     </div>
                     <div className="info_about">
                         <h2>Un lugar agradable para toda la familia.</h2>

@@ -1,5 +1,5 @@
 .button__reservation{
-    width: 45%;
+    width: 15%;
     padding: 0.5rem 1rem;
     cursor: pointer;
     background: black;
@@ -7,4 +7,14 @@
     color: #eeee;
     border-radius: 5px;
     font-size: 1.2rem;
+}
+
+@media (min-width: 300px) and (max-width:880px){
+    .button__reservation{
+        width: 40%;    
+        font-size: 1rem;    
+    }
+
+
+
 }
