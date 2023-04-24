@@ -8,7 +8,7 @@ const config = {
 
 AWS.config.update(config);
 
-const table = 'reservations'; 
+const table = 'reservaciones'; 
 
 const dynamo = new AWS.DynamoDB.DocumentClient();
 export const addReservation = async(data) =>{
@@ -17,6 +17,6 @@ export const addReservation = async(data) =>{
         Item: data
     }
 
-    const response = await dynamo.put(params).promise
+    const response = await dynamo.put(params).promise()
     console.log(response.$response.httpResponse); 
 }

@@ -9,21 +9,17 @@ import { Menu } from "./pages/Menu";
 import Reservation from "./pages/Reservation";
 
 function App() {
-  return (
-    <>
-    <Navbar/>
-    <Routes>
-            <Route path="/" element={<Home/>}/>
-    </Routes>
-    <Routes>
-            <Route path="/menu" element={<Menu/>}/>
-    </Routes>
-    <Routes>
-            <Route path="/reservation" element={<Reservation/>}/>
-    </Routes>
-    <Footer/>
-    </>
-  );
-}
+        return (
+          <>
+          <Navbar/>
+          <Routes>
+                  <Route path="/" element={<Home/>}/>
+                  <Route path="/menu" element={<Menu/>}/>
+                  <Route path="/reservation" element={<Reservation/>}/>
+          </Routes>
+          <Footer/>
+          </>
+        );
+      }
 
 export default App;

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import Button from '../components/Button';
 import restaurantInterior from './img/restaurante_interior.jpg';
 import { addReservation } from '../utils/dynamodb';
@@ -16,6 +16,7 @@ function Reservation () {
 
     })
 
+
     return (
         <section className = "app_container section_spacers">
         <div className="reservation_container">
@@ -30,7 +31,8 @@ function Reservation () {
                     <input type='number' name='numberPeople' value={form.numberPeople} onChange={(e) => setForm({...form, numberPeople: e.target.value})} required/>
                     <label>Fecha de reservación: </label>
                     <input type='date' name='reservationDate' value={form.reservationDate} onChange={(e) => setForm({...form, reservationDate: e.target.value})} required/>
-                    <Button onClick={() =>{
+                    <Button onClick={(e) =>{
+                        e.preventDefault()
                         addReservation({
                             id_reservaciones: 2,
                             name: form.name,

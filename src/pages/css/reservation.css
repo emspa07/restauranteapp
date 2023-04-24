@@ -38,4 +38,8 @@
     .form_data h2{
         font-size: 1.9rem;
     }
+    .form_data > button{
+        width: 50%;
+    }
+
 }
