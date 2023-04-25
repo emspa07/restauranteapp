@@ -24,7 +24,15 @@
     font-size: 1.5rem;
     margin-top: 1rem;
 }
-button{
+.button-jumbotron{
+    width: 15%;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background: black;
+    border: solid #ffff;
+    color: #eeee;
+    border-radius: 5px;
+    font-size: 1.2rem;
     margin-top: 1rem;
 }
 /*media queries*/
@@ -39,7 +47,8 @@ button{
     .hero_text p{
         font-size: 1rem;
     }
-    button{
-       padding: 100%;
+    .button-jumbotron{
+        width: 40%;    
+        font-size: 1rem;    
     }
 }

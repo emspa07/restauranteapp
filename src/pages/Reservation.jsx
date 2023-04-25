@@ -32,7 +32,6 @@ function Reservation () {
                     <label>Fecha de reservación: </label>
                     <input type='date' name='reservationDate' value={form.reservationDate} onChange={(e) => setForm({...form, reservationDate: e.target.value})} required/>
                     <Button onClick={(e) =>{
-                        e.preventDefault()
                         addReservation({
                             id_reservaciones: 2,
                             name: form.name,
